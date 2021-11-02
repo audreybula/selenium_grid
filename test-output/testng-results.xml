@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Functional Suite" duration-ms="12924" started-at="2021-11-03T10:23:56 FJT" finished-at="2021-11-03T10:24:09 FJT">
+  <suite name="Functional Suite" duration-ms="45261" started-at="2021-11-03T10:52:28 FJT" finished-at="2021-11-03T10:53:14 FJT">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="12924" started-at="2021-11-03T10:23:56 FJT" finished-at="2021-11-03T10:24:09 FJT">
+    <test name="Login Test Opera" duration-ms="12205" started-at="2021-11-03T10:52:28 FJT" finished-at="2021-11-03T10:52:40 FJT">
       <class name="TestSample">
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@52f759d7]" name="testLogin" duration-ms="12894" started-at="2021-11-03T10:23:56 FJT" finished-at="2021-11-03T10:24:09 FJT">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@5891e32e]" name="testLogin" duration-ms="12161" started-at="2021-11-03T10:52:28 FJT" finished-at="2021-11-03T10:52:40 FJT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- TestSample -->
+    </test> <!-- Login Test Opera -->
+    <test name="Login Test Chrome" duration-ms="12169" started-at="2021-11-03T10:52:40 FJT" finished-at="2021-11-03T10:52:53 FJT">
+      <class name="TestSample">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@5d11346a]" name="testLogin" duration-ms="12166" started-at="2021-11-03T10:52:40 FJT" finished-at="2021-11-03T10:52:53 FJT">
           <params>
             <param index="0">
               <value>
@@ -19,6 +34,36 @@
           </reporter-output>
         </test-method> <!-- testLogin -->
       </class> <!-- TestSample -->
-    </test> <!-- Login Test -->
+    </test> <!-- Login Test Chrome -->
+    <test name="Login Test Safari" duration-ms="13334" started-at="2021-11-03T10:52:53 FJT" finished-at="2021-11-03T10:53:06 FJT">
+      <class name="TestSample">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@10d59286]" name="testLogin" duration-ms="13332" started-at="2021-11-03T10:52:53 FJT" finished-at="2021-11-03T10:53:06 FJT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[safari]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- TestSample -->
+    </test> <!-- Login Test Safari -->
+    <test name="Login Test Firefox" duration-ms="7507" started-at="2021-11-03T10:53:06 FJT" finished-at="2021-11-03T10:53:14 FJT">
+      <class name="TestSample">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@52525845]" name="testLogin" duration-ms="7504" started-at="2021-11-03T10:53:06 FJT" finished-at="2021-11-03T10:53:14 FJT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+      </class> <!-- TestSample -->
+    </test> <!-- Login Test Firefox -->
   </suite> <!-- Functional Suite -->
 </testng-results>

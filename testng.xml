@@ -2,11 +2,32 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Functional Suite">
 
+	<test name="Login Test Opera">
+		<parameter name="browser" value="opera"></parameter>
+		<classes>
+			<class name="TestSample" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Login Test Chrome">
 	<parameter name="browser" value="chrome"></parameter>
-	<test name="Login Test">
+		<classes>
+			<class name="TestSample" />
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Login Test Safari">
+	<parameter name="browser" value="safari"></parameter>
 		<classes>
 			<class name="TestSample" />
 		</classes>
 	</test> <!-- Test -->
 	
+	<test name="Login Test Firefox">
+	<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="TestSample" />
+		</classes>
+	</test> <!-- Test -->
+
 </suite> <!-- Suite -->

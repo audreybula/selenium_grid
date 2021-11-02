@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.opera.OperaOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -40,6 +41,13 @@ public class TestSample {
 		    caps.setCapability(CapabilityType.BROWSER_NAME,"chrome");
 		    caps.setPlatform(Platform.ANY);
 		    caps.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+			
+		} else if(browser.equals("opera")) {
+			
+			OperaOptions operaOptions = new OperaOptions();
+		    caps.setCapability(CapabilityType.BROWSER_NAME,"opera");
+		    caps.setPlatform(Platform.ANY);
+		    caps.setCapability(OperaOptions.CAPABILITY, operaOptions);
 			
 		}
 		
