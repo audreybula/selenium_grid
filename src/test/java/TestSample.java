@@ -23,6 +23,7 @@ public class TestSample {
 		driver.get("https://www.paypal.com/fj/signin?country.x=FJ&locale.x=en_FJ");
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("olly.bula@gmail.com");
 		driver.findElement(By.xpath("//button[normalize-space()='Next']")).click();
+		driver.quit();
 		
 	}
 
