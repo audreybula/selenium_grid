@@ -2,22 +2,46 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariOptions;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class TestSample {
 	
+	public static DesiredCapabilities caps = new DesiredCapabilities();
+	
+	@Parameters("browser")
 	@Test
-	public void testLogin() throws MalformedURLException {
+	public void testLogin(String browser) throws MalformedURLException {
 		
-		FirefoxOptions chromeOptions = new FirefoxOptions();
-	    DesiredCapabilities caps = new DesiredCapabilities();
-	    caps.setCapability(CapabilityType.BROWSER_NAME,"firefox");
-	    caps.setCapability(FirefoxOptions.FIREFOX_OPTIONS, chromeOptions);
+		if(browser.equals("firefox")) {
+			
+			FirefoxOptions firefoxOptions = new FirefoxOptions();
+		    caps.setCapability(CapabilityType.BROWSER_NAME,"firefox");
+		    caps.setPlatform(Platform.ANY);
+		    caps.setCapability(FirefoxOptions.FIREFOX_OPTIONS, firefoxOptions);
+			
+		} else if(browser.equals("safari")) {
+			
+			SafariOptions safariOptions = new SafariOptions();
+		    caps.setCapability(CapabilityType.BROWSER_NAME,"safari");
+		    caps.setPlatform(Platform.MAC);
+		    caps.setCapability("something", safariOptions);
+			
+		} else if(browser.equals("chrome")) {
+			
+			ChromeOptions chromeOptions = new ChromeOptions();
+		    caps.setCapability(CapabilityType.BROWSER_NAME,"chrome");
+		    caps.setPlatform(Platform.ANY);
+		    caps.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+			
+		}
 		
 		RemoteWebDriver driver = new RemoteWebDriver(new URL("http://192.168.8.101:4444/"), caps);
 		driver.get("https://www.paypal.com/fj/signin?country.x=FJ&locale.x=en_FJ");

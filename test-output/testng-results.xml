@@ -2,12 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Functional Suite" duration-ms="8398" started-at="2021-11-02T21:50:49 FJT" finished-at="2021-11-02T21:50:57 FJT">
+  <suite name="Functional Suite" duration-ms="12924" started-at="2021-11-03T10:23:56 FJT" finished-at="2021-11-03T10:24:09 FJT">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="8398" started-at="2021-11-02T21:50:49 FJT" finished-at="2021-11-02T21:50:57 FJT">
+    <test name="Login Test" duration-ms="12924" started-at="2021-11-03T10:23:56 FJT" finished-at="2021-11-03T10:24:09 FJT">
       <class name="TestSample">
-        <test-method status="PASS" signature="testLogin()[pri:0, instance:TestSample@ed9d034]" name="testLogin" duration-ms="8355" started-at="2021-11-02T21:50:49 FJT" finished-at="2021-11-02T21:50:57 FJT">
+        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@52f759d7]" name="testLogin" duration-ms="12894" started-at="2021-11-03T10:23:56 FJT" finished-at="2021-11-03T10:24:09 FJT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
