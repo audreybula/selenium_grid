@@ -1,15 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel Exec with Grid 4 Suite" duration-ms="12757" started-at="2021-11-03T18:06:02 FJT" finished-at="2021-11-03T18:06:15 FJT">
+  <suite name="Default suite" duration-ms="37667" started-at="2021-11-03T19:47:43 FJT" finished-at="2021-11-03T19:48:21 FJT">
     <groups>
     </groups>
-    <test name="Login Test FF" duration-ms="12757" started-at="2021-11-03T18:06:02 FJT" finished-at="2021-11-03T18:06:15 FJT">
-      <class name="testcases.TestParametersXML">
-        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:testcases.TestParametersXML@23fe1d71]" name="launchBrowser" duration-ms="12719" started-at="2021-11-03T18:06:02 FJT" finished-at="2021-11-03T18:06:15 FJT">
+    <test name="Default test" duration-ms="37667" started-at="2021-11-03T19:47:43 FJT" finished-at="2021-11-03T19:48:21 FJT">
+      <class name="ParallelThreadLocal">
+        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:ParallelThreadLocal@28ac3dc3]" name="testLogin" duration-ms="13619" started-at="2021-11-03T19:47:43 FJT" data-provider="getData" finished-at="2021-11-03T19:47:57 FJT">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[olly.bula@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:ParallelThreadLocal@28ac3dc3]" name="testLogin" duration-ms="5156" started-at="2021-11-03T19:47:57 FJT" data-provider="getData" finished-at="2021-11-03T19:48:02 FJT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tflrunningsheet@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:ParallelThreadLocal@28ac3dc3]" name="testLogin" duration-ms="8318" started-at="2021-11-03T19:48:02 FJT" data-provider="getData" finished-at="2021-11-03T19:48:10 FJT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[teddy.bula@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:ParallelThreadLocal@28ac3dc3]" name="testLogin" duration-ms="10501" started-at="2021-11-03T19:48:10 FJT" data-provider="getData" finished-at="2021-11-03T19:48:21 FJT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oliver.bula@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[safari]]>
               </value>
@@ -17,8 +70,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- launchBrowser -->
-      </class> <!-- testcases.TestParametersXML -->
-    </test> <!-- Login Test FF -->
-  </suite> <!-- Parallel Exec with Grid 4 Suite -->
+        </test-method> <!-- testLogin -->
+      </class> <!-- ParallelThreadLocal -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
