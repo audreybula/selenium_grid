@@ -10,16 +10,15 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariOptions;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class TestSample {
 	
 	public static DesiredCapabilities caps = new DesiredCapabilities();
 	
-	@Parameters("browser")
-	@Test
-	public void testLogin(String browser) throws MalformedURLException {
+	@Test(dataProvider = "getData")
+	public void testLogin(String username, String browser) throws MalformedURLException {
 		
 		if(browser.equals("firefox")) {
 			
@@ -53,9 +52,34 @@ public class TestSample {
 		
 		RemoteWebDriver driver = new RemoteWebDriver(new URL("http://192.168.8.101:4444/"), caps);
 		driver.get("https://www.paypal.com/fj/signin?country.x=FJ&locale.x=en_FJ");
-		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("olly.bula@gmail.com");
+		driver.findElement(By.xpath("//input[@id='email']")).sendKeys(username);
 		driver.findElement(By.xpath("//button[normalize-space()='Next']")).click();
 		driver.quit();
+		
+	}
+	
+	@DataProvider
+	public Object[][] getData() {
+		
+		Object[][] data = new Object[4][2];
+		
+		//first row
+		data[0][0] = "olly.bula@gmail.com";
+		data[0][1] = "firefox";
+		
+		// second row
+		data[1][0] = "tflrunningsheet@gmail.com";
+		data[1][1] = "chrome";
+
+		// third row
+		data[2][0] = "teddy.bula@gmail.com";
+		data[2][1] = "opera";
+
+		// fourth row
+		data[3][0] = "oliver.bula@gmail.com";
+		data[3][1] = "safari";
+		
+		return data;
 		
 	}
 

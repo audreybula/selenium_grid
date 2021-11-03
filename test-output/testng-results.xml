@@ -2,29 +2,35 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Functional Suite" duration-ms="45261" started-at="2021-11-03T10:52:28 FJT" finished-at="2021-11-03T10:53:14 FJT">
+  <suite name="Parallel Exec with Grid Suite" duration-ms="36233" started-at="2021-11-03T12:33:37 FJT" finished-at="2021-11-03T12:34:14 FJT">
     <groups>
     </groups>
-    <test name="Login Test Opera" duration-ms="12205" started-at="2021-11-03T10:52:28 FJT" finished-at="2021-11-03T10:52:40 FJT">
+    <test name="Login Test" duration-ms="36233" started-at="2021-11-03T12:33:37 FJT" finished-at="2021-11-03T12:34:14 FJT">
       <class name="TestSample">
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@5891e32e]" name="testLogin" duration-ms="12161" started-at="2021-11-03T10:52:28 FJT" finished-at="2021-11-03T10:52:40 FJT">
+        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestSample@74a10858]" name="testLogin" duration-ms="10690" started-at="2021-11-03T12:33:37 FJT" data-provider="getData" finished-at="2021-11-03T12:33:48 FJT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[opera]]>
+                <![CDATA[olly.bula@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-      </class> <!-- TestSample -->
-    </test> <!-- Login Test Opera -->
-    <test name="Login Test Chrome" duration-ms="12169" started-at="2021-11-03T10:52:40 FJT" finished-at="2021-11-03T10:52:53 FJT">
-      <class name="TestSample">
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@5d11346a]" name="testLogin" duration-ms="12166" started-at="2021-11-03T10:52:40 FJT" finished-at="2021-11-03T10:52:53 FJT">
+        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestSample@74a10858]" name="testLogin" duration-ms="8613" started-at="2021-11-03T12:33:48 FJT" data-provider="getData" finished-at="2021-11-03T12:33:57 FJT">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[tflrunningsheet@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[chrome]]>
               </value>
@@ -33,13 +39,30 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLogin -->
-      </class> <!-- TestSample -->
-    </test> <!-- Login Test Chrome -->
-    <test name="Login Test Safari" duration-ms="13334" started-at="2021-11-03T10:52:53 FJT" finished-at="2021-11-03T10:53:06 FJT">
-      <class name="TestSample">
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@10d59286]" name="testLogin" duration-ms="13332" started-at="2021-11-03T10:52:53 FJT" finished-at="2021-11-03T10:53:06 FJT">
+        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestSample@74a10858]" name="testLogin" duration-ms="7035" started-at="2021-11-03T12:33:57 FJT" data-provider="getData" finished-at="2021-11-03T12:34:04 FJT">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[teddy.bula@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[opera]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestSample@74a10858]" name="testLogin" duration-ms="9848" started-at="2021-11-03T12:34:04 FJT" data-provider="getData" finished-at="2021-11-03T12:34:14 FJT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[oliver.bula@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[safari]]>
               </value>
@@ -49,21 +72,6 @@
           </reporter-output>
         </test-method> <!-- testLogin -->
       </class> <!-- TestSample -->
-    </test> <!-- Login Test Safari -->
-    <test name="Login Test Firefox" duration-ms="7507" started-at="2021-11-03T10:53:06 FJT" finished-at="2021-11-03T10:53:14 FJT">
-      <class name="TestSample">
-        <test-method status="PASS" signature="testLogin(java.lang.String)[pri:0, instance:TestSample@52525845]" name="testLogin" duration-ms="7504" started-at="2021-11-03T10:53:06 FJT" finished-at="2021-11-03T10:53:14 FJT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- TestSample -->
-    </test> <!-- Login Test Firefox -->
-  </suite> <!-- Functional Suite -->
+    </test> <!-- Login Test -->
+  </suite> <!-- Parallel Exec with Grid Suite -->
 </testng-results>
