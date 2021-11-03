@@ -1,68 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Parallel Exec with Grid Suite" duration-ms="36233" started-at="2021-11-03T12:33:37 FJT" finished-at="2021-11-03T12:34:14 FJT">
+  <suite name="Parallel Exec with Grid 4 Suite" duration-ms="12757" started-at="2021-11-03T18:06:02 FJT" finished-at="2021-11-03T18:06:15 FJT">
     <groups>
     </groups>
-    <test name="Login Test" duration-ms="36233" started-at="2021-11-03T12:33:37 FJT" finished-at="2021-11-03T12:34:14 FJT">
-      <class name="TestSample">
-        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestSample@74a10858]" name="testLogin" duration-ms="10690" started-at="2021-11-03T12:33:37 FJT" data-provider="getData" finished-at="2021-11-03T12:33:48 FJT">
+    <test name="Login Test FF" duration-ms="12757" started-at="2021-11-03T18:06:02 FJT" finished-at="2021-11-03T18:06:15 FJT">
+      <class name="testcases.TestParametersXML">
+        <test-method status="PASS" signature="launchBrowser(java.lang.String)[pri:0, instance:testcases.TestParametersXML@23fe1d71]" name="launchBrowser" duration-ms="12719" started-at="2021-11-03T18:06:02 FJT" finished-at="2021-11-03T18:06:15 FJT">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[olly.bula@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestSample@74a10858]" name="testLogin" duration-ms="8613" started-at="2021-11-03T12:33:48 FJT" data-provider="getData" finished-at="2021-11-03T12:33:57 FJT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tflrunningsheet@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestSample@74a10858]" name="testLogin" duration-ms="7035" started-at="2021-11-03T12:33:57 FJT" data-provider="getData" finished-at="2021-11-03T12:34:04 FJT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[teddy.bula@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[opera]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method status="PASS" signature="testLogin(java.lang.String,java.lang.String)[pri:0, instance:TestSample@74a10858]" name="testLogin" duration-ms="9848" started-at="2021-11-03T12:34:04 FJT" data-provider="getData" finished-at="2021-11-03T12:34:14 FJT">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[oliver.bula@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[safari]]>
               </value>
@@ -70,8 +17,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogin -->
-      </class> <!-- TestSample -->
-    </test> <!-- Login Test -->
-  </suite> <!-- Parallel Exec with Grid Suite -->
+        </test-method> <!-- launchBrowser -->
+      </class> <!-- testcases.TestParametersXML -->
+    </test> <!-- Login Test FF -->
+  </suite> <!-- Parallel Exec with Grid 4 Suite -->
 </testng-results>

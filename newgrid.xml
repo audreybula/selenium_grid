@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Exec with Grid 4 Suite" parallel="tests">
+
+	<test name="Login Test FF">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="testcases.TestParametersXML" />
+		</classes>
+	</test> <!-- Test -->
+	
+	<test name="Login Test Ch">
+		<parameter name="browser" value="safari"></parameter>
+		<classes>
+			<class name="testcases.TestParametersXML" />
+		</classes>
+	</test> <!-- Test -->
+
+</suite> <!-- Suite -->
